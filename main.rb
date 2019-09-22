@@ -24,7 +24,7 @@ def configure
 end
 
 def get_cards
-    member = Trello::Member.find('happy_ryosuke16')
+    member = Trello::Member.find(ENV['USER_ID'])
     boards = member.boards
     board = boards.find { |board| board.name == 'TODO'}
     list = board.lists[0]
