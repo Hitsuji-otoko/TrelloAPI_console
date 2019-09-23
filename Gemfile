@@ -8,3 +8,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem 'ruby-trello'
 gem 'pry-byebug'
 gem 'dotenv'
+
+gem 'googlebooks', '~> 0.0.9'
